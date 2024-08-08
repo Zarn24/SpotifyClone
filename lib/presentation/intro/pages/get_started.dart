@@ -22,7 +22,7 @@ class GetStartedPage extends StatelessWidget {
             color: Colors.black.withOpacity(0.15),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 40, horizontal: 40),
+            padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 40),
             child: Column(
               children: [
                 Align(

@@ -1,10 +1,8 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:spotify_clone/common/widgets/button/basic_app_button.dart';
 import 'package:spotify_clone/core/config/assets/app_images.dart';
-import 'package:spotify_clone/core/config/assets/app_vectors.dart';
 import 'package:spotify_clone/core/config/theme/app_colors.dart';
 
 class ChooseModePage extends StatelessWidget {
@@ -26,7 +24,7 @@ class ChooseModePage extends StatelessWidget {
             color: Colors.black.withOpacity(0.15),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 40, horizontal: 40),
+            padding: const EdgeInsets.symmetric(vertical: 40, horizontal: 40),
             child: Column(
               children: [
                 Align(
@@ -57,16 +55,17 @@ class ChooseModePage extends StatelessWidget {
                               height: 80,
                               width: 80,
                               decoration: BoxDecoration(
-                                  color: Color(0xff30393C).withOpacity(0.5),
+                                  color:
+                                      const Color(0xff30393C).withOpacity(0.5),
                                   shape: BoxShape.circle),
                               child: Image.asset('assets/vectors/moon.png'),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text(
+                        const Text(
                           'Dark Mode',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
@@ -75,7 +74,7 @@ class ChooseModePage extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 40,
                     ),
                     Column(
@@ -87,16 +86,17 @@ class ChooseModePage extends StatelessWidget {
                               height: 80,
                               width: 80,
                               decoration: BoxDecoration(
-                                  color: Color(0xff30393C).withOpacity(0.5),
+                                  color:
+                                      const Color(0xff30393C).withOpacity(0.5),
                                   shape: BoxShape.circle),
                               child: Image.asset('assets/vectors/sun.png'),
                             ),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 15,
                         ),
-                        Text(
+                        const Text(
                           'Light Mode',
                           style: TextStyle(
                               fontWeight: FontWeight.w500,
