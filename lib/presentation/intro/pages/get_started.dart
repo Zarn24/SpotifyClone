@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spotify_clone/common/widgets/button/basic_app_button.dart';
 import 'package:spotify_clone/core/config/assets/app_images.dart';
 import 'package:spotify_clone/core/config/theme/app_colors.dart';
+import 'package:spotify_clone/presentation/choose_mode/pages/choose_mode.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({super.key});
@@ -16,6 +17,12 @@ class GetStartedPage extends StatelessWidget {
             decoration: const BoxDecoration(
                 image: DecorationImage(
                     fit: BoxFit.fill, image: AssetImage(AppImages.introBG))),
+          ),
+          Container(
+            color: Colors.black.withOpacity(0.15),
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: 40, horizontal: 40),
             child: Column(
               children: [
                 Align(
@@ -46,13 +53,18 @@ class GetStartedPage extends StatelessWidget {
                 const SizedBox(
                   height: 21,
                 ),
-                BasicAppButton(onPressed: () {}, title: 'Get Started')
+                BasicAppButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const ChooseModePage()));
+                    },
+                    title: 'Get Started')
               ],
             ),
           ),
-          Container(
-            color: Colors.black.withOpacity(0.15),
-          )
         ],
       ),
     );
