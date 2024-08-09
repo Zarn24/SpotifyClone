@@ -70,7 +70,7 @@ class SignUpOrSignIn extends StatelessWidget {
                                       MaterialPageRoute(
                                           // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
                                           builder: (BuildContext) =>
-                                              const SignUpPage()));
+                                              SignUpPage()));
                                 },
                                 title: 'Register')),
                         const SizedBox(

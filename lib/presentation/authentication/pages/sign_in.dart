@@ -49,7 +49,6 @@ class SignInPage extends StatelessWidget {
     );
   }
 
-
   Widget _emailField(BuildContext context) {
     return TextField(
       decoration: const InputDecoration(hintText: 'Enter E-Mail')
@@ -83,7 +82,7 @@ class SignInPage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
-                        builder: (BuildContext) => const SignUpPage()));
+                        builder: (BuildContext) => SignUpPage()));
               },
               child: const Text('Register Now'))
         ],
