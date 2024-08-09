@@ -85,7 +85,7 @@ class SignUpOrSignIn extends StatelessWidget {
                                     MaterialPageRoute(
                                         // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
                                         builder: (BuildContext) =>
-                                            const SignInPage()));
+                                            SignInPage()));
                               },
                               child: Text(
                                 'Sign In',

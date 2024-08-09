@@ -26,7 +26,7 @@ class SignUpPage extends StatelessWidget {
           width: 150,
         ),
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 30),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -124,7 +124,7 @@ class SignUpPage extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         // ignore: avoid_types_as_parameter_names, non_constant_identifier_names
-                        builder: (BuildContext) => const SignInPage()));
+                        builder: (BuildContext) => SignInPage()));
               },
               child: const Text('Sign In'))
         ],
