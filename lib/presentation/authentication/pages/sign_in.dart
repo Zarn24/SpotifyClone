@@ -6,7 +6,7 @@ import 'package:spotify_clone/presentation/authentication/pages/sign_up.dart';
 
 import '../../../domain/usecases/auth/signin.dart';
 import '../../../service_locator.dart';
-import '../../root/pages/root.dart';
+import '../../home/pages/home.dart';
 
 class SignInPage extends StatelessWidget {
   SignInPage({super.key});
@@ -56,7 +56,7 @@ class SignInPage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                             builder: (BuildContext context) =>
-                                const RootPage()),
+                                const HomePage()),
                         (route) => false);
                   });
                 },
