@@ -49,12 +49,6 @@ class SignInPage extends StatelessWidget {
     );
   }
 
-  Widget _fullNameField(BuildContext context) {
-    return TextField(
-      decoration: const InputDecoration(hintText: 'Full Name')
-          .applyDefaults(Theme.of(context).inputDecorationTheme),
-    );
-  }
 
   Widget _emailField(BuildContext context) {
     return TextField(
