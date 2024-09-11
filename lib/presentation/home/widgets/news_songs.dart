@@ -19,19 +19,19 @@ class NewsSongs extends StatelessWidget {
             return CircularProgressIndicator();
           }
 
-          if (state is NewsSongLoaded) {
-            return _songs();
-          }
+          // if (state is NewsSongLoaded) {
+          //   return _songs();
+          // }
           return Container();
         }),
       ),
     );
   }
-  
-  Widget _songs(){
-    return ListView.separated(
-            itemBuilder: itemBuilder,
-            separatorBuilder: separatorBuilder,
-            itemCount: itemCount),
-  }
+
+  // Widget _songs(){
+  //   return ListView.separated(
+  //           itemBuilder: itemBuilder,
+  //           separatorBuilder: separatorBuilder,
+  //           itemCount: itemCount),
+  // }
 }
