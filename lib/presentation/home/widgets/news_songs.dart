@@ -16,7 +16,7 @@ class NewsSongs extends StatelessWidget {
         child: BlocBuilder<NewsSongsCubit, NewsSongsState>(
             builder: (context, state) {
           if (state is NewsSongLoading) {
-            return CircularProgressIndicator();
+            return const CircularProgressIndicator();
           }
 
           // if (state is NewsSongLoaded) {
