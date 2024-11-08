@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:spotify_clone/common/helpers/is_dark_mode.dart';
 import 'package:spotify_clone/common/widgets/appbar/appbar.dart';
 import 'package:spotify_clone/core/config/theme/app_colors.dart';
+import 'package:spotify_clone/presentation/home/widgets/news_songs.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -36,6 +37,18 @@ class _HomePageState extends State<HomePage>
           children: [
             _homeTopCard(),
             _tabs(),
+            SizedBox(
+              height: 260,
+              child: TabBarView(
+                controller: _tabController,
+                children: [
+                  NewsSongs(),
+                  Container(),
+                  Container(),
+                  Container(),
+                ],
+              ),
+            )
           ],
         ),
       ),
