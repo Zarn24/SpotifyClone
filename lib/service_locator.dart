@@ -7,6 +7,7 @@ import 'package:spotify_clone/data/sources/song/song_firebase_service.dart';
 import 'package:spotify_clone/domain/repository/song/song.dart';
 import 'package:spotify_clone/domain/usecases/auth/signup.dart';
 import 'package:spotify_clone/domain/usecases/song/get_new_songs.dart';
+import 'package:spotify_clone/domain/usecases/song/get_play_list.dart';
 
 import 'domain/usecases/auth/signin.dart';
 
@@ -27,4 +28,6 @@ Future<void> initalizeDependencies() async {
   sl.registerSingleton<SongRepository>(SongRepositoryImpl());
 
   sl.registerSingleton<GetNewSongsUseCase>(GetNewSongsUseCase());
+
+  sl.registerSingleton<GetPLayListUseCase>(GetPLayListUseCase());
 }
