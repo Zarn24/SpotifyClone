@@ -4,7 +4,6 @@ import 'package:spotify_clone/common/helpers/is_dark_mode.dart';
 import 'package:spotify_clone/core/config/constants/app_urls.dart';
 import 'package:spotify_clone/core/config/theme/app_colors.dart';
 import 'package:spotify_clone/presentation/home/bloc/news_songs_cubit.dart';
-
 import '../../../domain/entities/song/song.dart';
 import '../bloc/news_songs_state.dart';
 
@@ -29,6 +28,16 @@ class NewsSongs extends StatelessWidget {
           if (state is NewsSongLoaded) {
             return _songs(state.songs);
           }
+
+          if (state is NewsSongLoadFailiure) {
+            return Center(
+              child: Text(
+                state.errorMessage,
+                style: TextStyle(color: Colors.red),
+              ),
+            );
+          }
+
           return Container();
         }),
       ),

@@ -9,4 +9,7 @@ class PLayListLoaded extends PlayListState {
   PLayListLoaded({required this.songs});
 }
 
-class PLayListLoadFailiure extends PlayListState {}
+class PLayListLoadFailiure extends PlayListState {
+  final String errorMessage;
+  PLayListLoadFailiure({required this.errorMessage});
+}
